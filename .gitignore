@@ -1,0 +1,10 @@
+.superpowers/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+node_modules/
+dist/
+*.egg-info/
+target/

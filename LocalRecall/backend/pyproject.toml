@@ -1,0 +1,35 @@
+[project]
+name = "localrecall-backend"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
+    "websockets>=12.0",
+    "sqlalchemy>=2.0.25",
+    "chromadb>=0.4.22",
+    "llama-cpp-python>=0.2.50",
+    "sentence-transformers>=2.3.0",
+    "watchdog>=3.0.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "pymupdf>=1.23.0",
+    "python-docx>=1.1.0",
+    "openpyxl>=3.1.0",
+    "python-pptx>=0.6.23",
+    "paddleocr>=2.7.0",
+    "paddlepaddle>=2.6.0",
+    "tree-sitter>=0.21.0,<0.23",
+    "tree-sitter-languages>=1.10.0",
+    "httpx>=0.26.0",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.scripts]
+localrecall = "app.main:cli"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
